@@ -1,2 +1,2 @@
-# EverestCapital_Frontend
-- Javascript, HTML, CSS, and React
+# EverestCapital Frontend
+- Homepage of Everest Capital written in HTML, CSS, and Java Script
