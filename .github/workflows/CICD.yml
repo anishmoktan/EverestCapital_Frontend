@@ -41,12 +41,5 @@ jobs:
 #         run: grep -Fq "body" css/styles.css 
 
 
-
-
-      # - name: Run a multi-line script
-      #   run: |
-      #     echo Add other actions to build,
-      #     echo test, and deploy your project.
-
       - name: Deploy to S3
         run: aws s3 sync . s3://www.everestcapital.org --acl public-read
