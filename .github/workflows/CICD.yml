@@ -33,8 +33,8 @@ jobs:
       - name: AWS S3 Bucket Check
         run: aws s3 ls
 
-      - name: HTML Test
-        run: grep -Fq "Everest" index.html
+      # - name: HTML Test
+      #   run: grep -Fq "a" index.html
 
       - name: CSS Test
         run: grep -Fq "body" css/styles.css 
