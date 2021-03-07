@@ -33,11 +33,17 @@ jobs:
       - name: AWS S3 Bucket Check
         run: aws s3 ls
 
+      - name: Prints the working directory
+        run: pwd
+
+      - name: Lists items in directory
+        run: ls
+
       # - name: HTML Test
       #   run: grep -Fq "a" index.html
 
-      - name: CSS Test
-        run: grep -Fq "body" css/styles.css 
+      # - name: CSS Test
+      #   run: grep -Fq "body" css/styles.css 
 
-      - name: Deploy to S3
-        run: aws s3 sync . s3://www.everestcapital.org --acl public-read
+      # - name: Deploy to S3
+      #   run: aws s3 sync . s3://www.everestcapital.org --acl public-read
