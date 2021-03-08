@@ -43,7 +43,7 @@ jobs:
         run: grep -Fq "a" index.html
 
       - name: CSS Test
-        run: grep -Fq body assets/main.css 
+        run: grep -Fq "body" assets/css/main.css 
 
       # - name: Deploy to S3
       #   run: aws s3 sync . s3://www.everestcapital.org --acl public-read
