@@ -39,11 +39,11 @@ jobs:
       - name: Lists items in directory
         run: ls
 
-      # - name: HTML Test
-      #   run: grep -Fq "a" index.html
+      - name: HTML Test
+        run: grep -Fq "a" index.html
 
-      # - name: CSS Test
-      #   run: grep -Fq "body" css/styles.css 
+      - name: CSS Test
+        run: grep -Fq "body" assets/main.css 
 
       # - name: Deploy to S3
       #   run: aws s3 sync . s3://www.everestcapital.org --acl public-read
