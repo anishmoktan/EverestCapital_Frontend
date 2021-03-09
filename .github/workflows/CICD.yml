@@ -45,5 +45,5 @@ jobs:
       - name: CSS Test
         run: grep -Fq "body" assets/css/main.css 
 
-      - name: Deploy to S3
+      - name: Deploy to S3 (not created)
         run: aws s3 sync . s3://www.everestcapital.org --acl public-read
