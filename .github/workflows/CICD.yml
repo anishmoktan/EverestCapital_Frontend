@@ -29,12 +29,6 @@ jobs:
       - name: AWS S3 Bucket Check
         run: aws s3 ls
 
-      - name: Prints the working directory
-        run: pwd
-
-      - name: Lists items in directory
-        run: ls
-
       - name: HTML Test
         run: grep -Fq "a" index.html
 
